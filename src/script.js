@@ -23,19 +23,20 @@ const textureLoader = new THREE.TextureLoader()
 /**
  * Test cube
  */
-const cube = new THREE.Mesh(
-    new THREE.BoxGeometry(1, 1, 1),
-    new THREE.MeshBasicMaterial()
-)
-scene.add(cube)
+// const cube = new THREE.Mesh(
+//     new THREE.BoxGeometry(1, 1, 1),
+//     new THREE.MeshBasicMaterial()
+// )
+// scene.add(cube)
 
 /**
  * Test sphere
  */
  const sphere = new THREE.Mesh(
-    new THREE.SphereGeometry(5, 32, 16),
+    new THREE.SphereGeometry(1, 32, 16),
     new THREE.MeshBasicMaterial({ color: 0xffff00 })
 )
+sphere.position.set(0, 0, 0)
 scene.add(sphere)
 
 /**
